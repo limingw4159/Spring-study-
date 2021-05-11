@@ -1,4 +1,4 @@
-package Spring01.testDemo;
+package Spring01.bean注入属性;
 
 public class User {
     private String userName;

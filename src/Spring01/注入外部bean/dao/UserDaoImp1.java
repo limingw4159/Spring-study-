@@ -1,4 +1,4 @@
-package Spring01.outsideBean.dao;
+package Spring01.注入外部bean.dao;
 
 public class UserDaoImp1 implements UserDao{
 

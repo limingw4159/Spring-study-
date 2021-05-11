@@ -2,12 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="userService" class="Spring01.outsideBean.service.UserService">
+    <bean id="userService" class="Spring01.注入外部bean.service.UserService">
 <!--        注入userDao对象
             name属性：类里面属性名称
             ref属性：创建userDao对象bean标枪id值
 -->
         <property name="userDao" ref="userDao"></property>
     </bean>
-    <bean id="userDao" class="Spring01.outsideBean.dao.UserDaoImp1"></bean>
+    <bean id="userDao" class="Spring01.注入外部bean.dao.UserDaoImp1"></bean>
 </beans>

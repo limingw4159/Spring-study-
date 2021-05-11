@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--配置User对象创建-->
-<!--    <bean id="user" class="Spring01.testDemo.User"></bean>-->
+<!--    <bean id="user" class="Spring01.bean注入属性.User"></bean>-->
 <!--    2.set method to injet the property-->
-   <bean id="book" class="Spring01.testDemo.Book">
+   <bean id="book" class="Spring01.bean注入属性.Book">
 <!--       use property to inject
                 name:the name of property in class
                 value:value for property
@@ -18,7 +18,7 @@
    </bean>
 
 <!--    3.existed value constructor inject property-->
-<!--    <bean id="orders" class="Spring01.testDemo.Orders">-->
+<!--    <bean id="orders" class="Spring01.bean注入属性.Orders">-->
 <!--&lt;!&ndash;        构造参数&ndash;&gt;-->
 <!--        <constructor-arg  name="oname" value="computer"></constructor-arg >-->
 <!--        <constructor-arg name="address" value="China"></constructor-arg >-->

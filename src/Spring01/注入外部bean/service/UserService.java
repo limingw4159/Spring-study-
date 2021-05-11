@@ -1,7 +1,7 @@
-package Spring01.outsideBean.service;
+package Spring01.注入外部bean.service;
 
-import Spring01.outsideBean.dao.UserDao;
-import Spring01.outsideBean.dao.UserDaoImp1;
+import Spring01.注入外部bean.dao.UserDao;
+import Spring01.注入外部bean.dao.UserDaoImp1;
 
 public class UserService {
 
