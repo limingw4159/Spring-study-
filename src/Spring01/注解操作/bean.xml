@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    开启组件扫描, 2种方式-->
+    <!--1。扫描DAO，service包 -->
+<context:component-scan base-package="Spring01.注解操作.DAO,Spring01.注解操作.service"></context:component-scan>
+<!--    2。扫描包上层目录-->
+<!--    <context:component-scan base-package="Spring01.注解操作"></context:component-scan>-->
+
+<!--组件扫描配置-->
+<!--    include-filter：扫描包含expression里的注解的类-->
+<context:component-scan base-package="Spring01.注解操作" use-default-filters="false">
+    <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>   
+</context:component-scan>
+<!--去掉use-default-filters="false",设置为exclude-filter，则扫描不包含表达式里的注解的包-->
+    <context:component-scan base-package="Spring01.注解操作" >
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+</beans>
